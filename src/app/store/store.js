@@ -13,7 +13,6 @@ const usePsyStore = create((set) => ({
   updateScore: (newState) => set( (state)=>({ score: newState}) )
 }))
 
-
 const useQuestionStore = create((set) => ({
   questions: {
     "1":{
@@ -63,6 +62,5 @@ const useQuestionStore = create((set) => ({
     }
   },
 }))
-
 
 export { usePsyStore, useQuestionStore}

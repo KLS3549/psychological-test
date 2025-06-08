@@ -38,11 +38,10 @@ export default function Croissant() {
     psyState.updateState(psyState.state - 1);
   }
 
-
   return (
     <>
     {psyState.score}
-      <div className="w-screen h-screen bg-[#dedec0] flex justify-center items-center">
+      <div className="w-full min-h-screen bg-[#dedec0] flex justify-center items-center overflow-y-auto overflow-x-hidden px-4">
         { psyState.state == 0 && <StartPage nextStep={nextStep} />}
         { psyState.state == 1 && <QuestionPage nextStep={nextStep} questionIndex={psyState.questionState} />}
         { psyState.state == 2 && <DisplayResultPage nextStep={nextStep}/>}

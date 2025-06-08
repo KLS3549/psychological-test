@@ -29,7 +29,7 @@ export default function StartPage({nextStep}) {
           <div className='text-[#96895d] py-[8px] font-bold text-3xl flex justify-center items-center z-10'
             >喜久福小測驗
           </div>
-          <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>
+          <div className='w-[70%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>
 
           <div className='text-[#96895d] text-center text-lg font-bold leading-loose tracking-wide z-10'>
             喜久福是日本宮城縣仙台市的名產，口感柔軟甜而不膩
