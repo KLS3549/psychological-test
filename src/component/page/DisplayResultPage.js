@@ -20,21 +20,21 @@ export default function DisplayResultPage({nextStep}) {
           <Image priority className='absolute top-0 -translate-y-1/2 z-0' src={circle0Img} alt='circle0Img' />
 
           {/* 左上角甜點 */}
-          <Image className='absolute top-0 left-0 m-4 w-[180px] z-5 pointer-events-none' src={sweet1Img} alt='sweet1' />
+          <Image className='absolute top-0 left-0 m-2 md:m-4 w-[100px] md:w-[180px] z-5 pointer-events-none' src={sweet1Img} alt='sweet1' />
           {/* 右上角甜點 */}
-          <Image className='absolute top-0 right-0 m-4 w-[180px] z-5 pointer-events-none' src={sweet2Img} alt='sweet2' />
+          <Image className='absolute top-0 right-0 m-2 md:m-4 w-[100px] md:w-[180px] z-5 pointer-events-none' src={sweet2Img} alt='sweet2' />
           {/* 左下角甜點 */}
-          <Image className='absolute bottom-0 left-0 m-4 w-[180px] z-5 pointer-events-none' src={sweet3Img} alt='sweet3' />
+          <Image className='absolute bottom-0 left-0 m-2 md:m-4 w-[100px] md:w-[180px] z-5 pointer-events-none' src={sweet3Img} alt='sweet3' />
           {/* 右下角甜點 */}
-          <Image className='absolute bottom-0 right-0 m-4 w-[180px] z-5 pointer-events-none' src={sweet4Img} alt='sweet4' />
+          <Image className='absolute bottom-0 right-0 m-2 md:m-4 w-[100px] md:w-[180px] z-5 pointer-events-none' src={sweet4Img} alt='sweet4' />
 
 
-          <div className='text-[#96895d] py-[10px] font-bold text-3xl flex justify-center items-center z-10 mt-5'
+          <div className='text-[#96895d] py-[10px] font-bold text-xl md:text-3xl flex justify-center items-center z-10 mt-5'
             >一口咬下，你會是哪種喜久福？
           </div>
 
           
-          <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full'></div>
+          <div className='w-[300%] h-[1px] bg-[#b1a36e] rounded-full'></div>
 
           <div 
             className={`bg-[#b1a36e] w-[150px] rounded-full text-white 

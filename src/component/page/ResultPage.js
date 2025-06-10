@@ -27,7 +27,7 @@ export default function QuestionPage() {
   return (
     <>
         <MobileFrame>
-          <div className='flex justify-center items-center flex-col w-[500px] gap-[50px] font-bold'>
+          <div className='flex justify-center items-center flex-col w-[500px] gap-[30px] font-bold'>
 
               {
                 (psyState.score  >= 5 && psyState.score <= 12) && 
@@ -35,18 +35,19 @@ export default function QuestionPage() {
                   <Image priority className='absolute top-0 -translate-y-1/2 z-0' src={circleAImg} alt='circleAImg z-0' />
                   <div className="flex justify-center mb-4 z-5">
                     <Image
-                      className="w-50 h-auto" // 調整圖片大小
+                      className="w-35 md:w-50 h-auto" // 調整圖片大小
                       src={sweet1Img}
                       alt="sweet1Img"
                     />
                   </div> 
-                  <div className=' text-[#96895d] text-center text-3xl font-bold leading-loose tracking-wide z-5'>
+                  <div className=' text-[#96895d] text-center text-2xl md:text-3xl font-bold leading-loose tracking-wide z-5'>
                     抹茶喜久福
                   </div>
-                  <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>           
-                  <div className=' text-[#96895d] text-center text-lg font-bold leading-loose tracking-wide z-5'>
-                    你是個追求深度與質感的人，外表平靜，內在豐富，<br/>
-                    你對品味與品質特別敏感，<br/>
+                  <div className='w-[300%] h-[1px] md:h-[2px] bg-[#b1a36e] rounded-full z-10'></div>           
+                  <div className=' text-[#96895d] text-center text-sm md:text-lg font-bold leading-loose tracking-wide z-5'>
+                    你是個追求深度與質感的人，<br/>
+                    外表平靜，內在豐富，擅長在沉默中觀察世界，<br/>
+                    充滿細膩的情感與思考，<br/>
                     就像人氣王抹茶喜久福一樣，經典又不失格調！
                   </div>
                 </div>
@@ -58,18 +59,19 @@ export default function QuestionPage() {
                   <Image priority className='absolute top-0 -translate-y-1/2 z-0' src={circleBImg} alt='circleBImg z-0' />
                   <div className="flex justify-center mb-4 z-5">
                     <Image
-                      className="w-50 h-auto" // 調整圖片大小
+                      className="w-35 md:w-50 h-auto" // 調整圖片大小
                       src={sweet2Img}
                       alt="sweet2Img"
                     />
                   </div> 
-                  <div className=' text-[#96895d] text-center text-3xl font-bold leading-loose tracking-wide z-5'>
+                  <div className=' text-[#96895d] text-center text-2xl md:text-3xl font-bold leading-loose tracking-wide z-5'>
                     生奶油喜久福
                   </div>
-                  <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
-                  <div className='text-[#96895d] text-center text-lg font-bold leading-loose tracking-wide z-5'>
+                  <div className='w-[300%] h-[1px] md:h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
+                  <div className='text-[#96895d] text-center text-sm md:text-lg font-bold leading-loose tracking-wide z-5'>
                     你溫柔、體貼，容易讓人感到安心，<br/>
-                    和你在一起就像品嚐一口生奶油喜久福一樣，舒適無負擔，<br/>
+                    和你在一起就像品嚐一口生奶油喜久福一樣，<br/>
+                    舒適無負擔，<br/>
                     無論年齡、背景，你總能成為大家喜愛的存在！
                   </div>
                 </div>
@@ -81,19 +83,20 @@ export default function QuestionPage() {
                   <Image priority className='absolute top-0 -translate-y-1/2 z-0' src={circleDImg} alt='circleDImg z-0' />
                   <div className="flex justify-center mb-4 z-5">
                     <Image
-                      className="w-50 h-auto" // 調整圖片大小
+                      className="w-35 md:w-50 h-auto" // 調整圖片大小
                       src={sweet3Img}
                       alt="sweet3Img"
                     />
                   </div> 
-                  <div className=' text-[#96895d] text-center text-3xl font-bold leading-loose tracking-wide z-5'>
+                  <div className=' text-[#96895d] text-center text-2xl md:text-3xl font-bold leading-loose tracking-wide z-5'>
                     毛豆生奶油喜久福
                   </div>
-                  <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
-                  <div className='text-[#96895d] text-center text-lg font-bold leading-loose tracking-wide z-5'>
-                    你是個好奇寶寶，喜歡發掘生活中的小趣味，不按牌理出牌，<br/>
-                    就像使用仙台特產毛豆製作的毛豆生奶油喜久福，<br/>
-                    有著令人驚喜的清新口感，是團體中的活潑亮點！
+                  <div className='w-[300%] h-[1px] md:h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
+                  <div className='text-[#96895d] text-center text-sm md:text-lg font-bold leading-loose tracking-wide z-5'>
+                    你是個好奇寶寶，喜歡發掘生活中的小趣味，<br/>
+                    不按牌理出牌，<br/>
+                    就像用仙台特產毛豆製作的毛豆生奶油喜久福，<br/>
+                    有著令人驚喜的清新口感，是團體的活潑亮點！
                   </div>
                 </div>
               }
@@ -104,17 +107,18 @@ export default function QuestionPage() {
                   <Image priority className='absolute top-0 -translate-y-1/2 z-0' src={circleCImg} alt='circleCImg z-0' />
                   <div className="flex justify-center mb-4 z-5">
                     <Image
-                      className="w-50 h-auto" // 調整圖片大小
+                      className="w-35 md:w-50 h-auto" // 調整圖片大小
                       src={sweet4Img}
                       alt="sweet4Img"
                     />
                   </div> 
-                  <div className=' text-[#96895d] text-center text-3xl font-bold leading-loose tracking-wide z-5'>
+                  <div className=' text-[#96895d] text-center text-2xl md:text-3xl font-bold leading-loose tracking-wide z-5'>
                     焙茶生奶油喜久福
                   </div>
-                  <div className='w-[300%] h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
-                  <div className='text-[#96895d] text-center text-lg font-bold leading-loose tracking-wide z-5'>
-                    你擁有成熟品味與沉穩氣質，喜歡細膩的香氣與深層的滋味，<br/>
+                  <div className='w-[300%] h-[1px] md:h-[2px] bg-[#b1a36e] rounded-full z-10'></div>  
+                  <div className='text-[#96895d] text-center text-sm md:text-lg font-bold leading-loose tracking-wide z-5'>
+                    你擁有成熟的品味與沉穩的氣質，<br/>
+                    處事細膩思緒清晰，<br/>
                     不盲從流行，而是堅持自己的選擇，<br/>
                     如同焙茶生奶油喜久福，低調卻令人難以忘懷！
                   </div>

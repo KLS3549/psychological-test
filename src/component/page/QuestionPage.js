@@ -23,18 +23,6 @@ export default function QuestionPage({questionIndex, nextStep}) {
     console.log(option.title, option.value);
   }
 
-  const getMainColor = function(prefix){
-    let colorString = "";
-    if(questionIndex == 0){
-      colorString = prefix + "-[#90B62A]";
-    }else if(questionIndex == 1){
-      colorString = prefix + "-[#DD3E3E]";
-    }else{
-      colorString = prefix + "-[#1098EC]";
-    }
-    return colorString
-  }
-
   return (
     <>
       <MobileFrame>
@@ -60,7 +48,7 @@ export default function QuestionPage({questionIndex, nextStep}) {
           <Image className='absolute top-0 -translate-y-1/2 z-0' src={circle5Img} alt='circle5Img' />
         }
 
-        <div className='flex flex-col items-center gap-[26px] z-10'>
+        <div className='flex flex-col items-center gap-[20px] md:gap-[26px] z-10'>
 
           {/*上方數字圓圈*/}
 
@@ -109,31 +97,31 @@ export default function QuestionPage({questionIndex, nextStep}) {
           {
             questionIndex == 0 &&
             <div 
-              className='text-center font-bold text-2xl text-[#8ca17e] mb-[10px]'
+              className='text-center font-bold text-xl md:text-2xl text-[#8ca17e] mb-[10px]'
             > {questionData.questions[questionIndex+1].title} </div>
           }
           {
             questionIndex == 1 &&
             <div 
-              className='text-center font-bold text-2xl text-[#89815d] mb-[10px]'
+              className='text-center font-bold text-xl md:text-2xl text-[#89815d] mb-[10px]'
             > {questionData.questions[questionIndex+1].title} </div>
           }
           {
             questionIndex == 2 &&
             <div 
-              className='text-center font-bold text-2xl text-[#82a69f] mb-[10px]'
+              className='text-center font-bold text-xl md:text-2xl text-[#82a69f] mb-[10px]'
             > {questionData.questions[questionIndex+1].title} </div>
           }
           {
             questionIndex == 3 &&
             <div 
-              className='text-center font-bold text-2xl text-[#b0a571] mb-[10px]'
+              className='text-center font-bold text-xl md:text-2xl text-[#b0a571] mb-[10px]'
             > {questionData.questions[questionIndex+1].title} </div>
           }
           {
             questionIndex == 4 &&
             <div 
-              className='text-center font-bold text-2xl text-[#987e60] mb-[10px]'
+              className='text-center font-bold text-xl md:text-2xl text-[#987e60] mb-[10px]'
             > {questionData.questions[questionIndex+1].title} </div>
           }
 
@@ -141,23 +129,23 @@ export default function QuestionPage({questionIndex, nextStep}) {
 
           {
             questionIndex == 0 &&
-            <div className='w-[300%] h-[1px] bg-[#8ca17e] rounded-full z-10'></div>
+            <div className='w-[300%] h-[1px] md:h-[2px] bg-[#8ca17e] rounded-full z-10'></div>
           }
           {
             questionIndex == 1 &&
-            <div className='w-[300%] h-[1px] bg-[#89815d] rounded-full z-10'></div>
+            <div className='w-[300%] h-[1px] md:h-[2px] bg-[#89815d] rounded-full z-10'></div>
           }
           {
             questionIndex == 2 &&
-            <div className='w-[300%] h-[1px] bg-[#82a69f] rounded-full z-10'></div>
+            <div className='w-[300%] h-[1px] md:h-[2px] bg-[#82a69f] rounded-full z-10'></div>
           }
           {
             questionIndex == 3 &&
-            <div className='w-[300%] h-[1px] bg-[#b0a571] rounded-full z-10'></div>
+            <div className='w-[300%] h-[1px] md:h-[2px] bg-[#b0a571] rounded-full z-10'></div>
           }
           {
             questionIndex == 4 &&
-            <div className='w-[300%] h-[1px] bg-[#987e60] rounded-full z-10'></div>
+            <div className='w-[300%] h-[1px] md:h-[2px] bg-[#987e60] rounded-full z-10'></div>
           }
 
           {/*選項按鈕與文字*/}
@@ -195,7 +183,7 @@ export default function QuestionPage({questionIndex, nextStep}) {
               return (
                 <div
                   key={option.title + "-" + index} // 確保 key 唯一
-                  className={`${bgColor} ${shadowColor} w-[400px] rounded-full text-white 
+                  className={`${bgColor} ${shadowColor} w-[300px] md:w-[400px] rounded-full text-white 
                     py-[16px] font-bold text-lg flex justify-center items-center 
                     cursor-pointer hover:translate-y-0.5 transition`}
                   onClick={() => clickAnswer(option)}
